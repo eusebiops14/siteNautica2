@@ -1,0 +1,94 @@
+.body_NH {
+    display: grid;
+    grid-template-areas: 
+    "grid-header"
+    "grid-main-NH"
+    "grid-footer";
+    grid-template-columns: auto;
+    grid-template-rows: 110px 100vh 100px;
+}
+
+/* --------------------Cabecalho------------------------------------*/
+
+header {
+    grid-area: "grid-header";  
+
+}
+
+/*----------------------------------- Conteudo------------------------------ */
+
+.mosaico { /*nao usei a tag main para não conflitar com o css do styleMain*/
+    grid-area: "grid-main-NH";
+    
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25% ;
+    height: calc(100vh - 50px);
+
+}
+/*----------------------------------- rodapé------------------------------ */
+
+.rodape {
+    grid-area: "grid-footer";    
+}
+
+.cardDeImagem {
+    border-radius: 3px;
+}
+
+.cardDeImagem:nth-child(1) { /* posicao 1x1 */
+    background:url(./imagens/DJI_0007.JPG) center / cover no-repeat;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  
+}
+
+.cardDeImagem:nth-child(2) {
+    background: url(./imagens/DJI_0027.JPG) center / cover no-repeat;
+}
+
+.cardDeImagem:nth-child(3) {
+    background: url(./imagens/DJI_0148.JPG) center / cover no-repeat;
+}
+
+.cardDeImagem:nth-child(4) {
+    background: url(./imagens/DJI_0350.JPG) center / cover no-repeat;
+}
+
+.cardDeImagem:nth-child(5) {
+    background: url(./imagens/DJI_0363.JPG) center / cover no-repeat;
+    
+}
+
+.cardDeTexto {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    text-align: center;
+    
+    
+}
+
+.cardDeImagem:nth-child(6) {
+    background: url(./imagens/DJI_0366.JPG) center / cover no-repeat;
+    grid-column: 4/4;
+    grid-row: 2/4;
+}
+
+.cardDeImagem:nth-child(7) {
+    background: url(./imagens/familia1.jpg) center / cover no-repeat;
+    grid-row: 2/4;
+}
+
+.cardDeImagem:nth-child(8) {
+    background: url(./imagens/IMG_2803.JPEG) center / cover no-repeat;
+    
+}
+
+.cardDeImagem:nth-child(9) {
+    background: url(./imagens/IMG_8310.JPEG) center / cover no-repeat;
+    
+}
+
+.cardDeImagem:nth-child(10) {
+    background: url(./imagens/IMG_6398.JPEG) center / cover no-repeat;
+    
+}
